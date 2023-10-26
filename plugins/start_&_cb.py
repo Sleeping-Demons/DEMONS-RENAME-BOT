@@ -65,7 +65,7 @@ async def cb_handler(client, query: CallbackQuery):
             reply_markup = InlineKeyboardMarkup([[
                 InlineKeyboardButton("⚡𝑶𝒘𝒏𝒆𝒓⚡", url='https://t.me/Eren_Yeager021')
                 ],[
-                InlineKeyboardButton(' Uᴩᴅᴀᴛᴇꜱ', url='https://t.me/DemonsBots_Updates),
+                InlineKeyboardButton(' Uᴩᴅᴀᴛᴇꜱ', url='https://t.me/DemonsBots_Updates'),
                 InlineKeyboardButton(' Sᴜᴩᴩᴏʀᴛ', url='https://t.me/DemonsBots_Support')
                 ],[
                 InlineKeyboardButton(' Aʙᴏᴜᴛ', callback_data='about'),
