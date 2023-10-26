@@ -44,15 +44,22 @@ async def start(client, message):
     ]])
     if Config.START_PIC:
         await message.reply_photo(Config.START_PIC, caption=Txt.START_TXT.format( """
-        👋 ʜᴇʟʟᴏ Devil!
+        👋 ʜᴇʟʟᴏ {username}!
 
 🌟 ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ ᴛʜᴇ ᴀᴅᴠᴀɴᴄᴇᴅ ʀᴇɴᴀᴍᴇ ʙᴏᴛ! 🌟
 📂 ᴡɪᴛʜ ᴛʜɪꜱ ʙᴏᴛ, ʏᴏᴜ ᴄᴀɴ ᴇᴀꜱɪʟʏ  ʀᴇɴᴀᴍᴇ ʏᴏᴜʀ ꜰɪʟᴇꜱ ᴀɴᴅ ꜱᴇᴛ ᴄᴜꜱᴛᴏᴍ ᴛʜᴜᴍʙɴᴀɪʟꜱ ᴀɴᴅ ᴄᴀᴘᴛɪᴏɴꜱ. 🖼️📝
 
-🚀 ᴛʜɪꜱ ʙᴏᴛ ᴡᴀꜱ ᴄʀᴀꜰᴛᴇᴅ ʙʏ  ("𝙴𝚛𝚎𝚗" , url='https:t.me/Eren_yeager021')
+🚀 ᴛʜɪꜱ ʙᴏᴛ ᴡᴀꜱ ᴄʀᴀꜰᴛᴇᴅ ʙʏ  (text="𝙴𝚛𝚎𝚗" , url='https:t.me/Eren_yeager021')
 ᴛᴏ ᴘʀᴏᴠɪᴅᴇ ʏᴏᴜ ᴀ ꜱᴇᴀᴍʟᴇꜱꜱ ʀᴇɴᴀᴍɪɴɢ ᴇxᴘᴇʀɪᴇɴᴄᴇ. ⚡️ """ ), reply_markup=button)       
     else:
-        await message.reply_text(text=Txt.START_TXT.format(user.mention), reply_markup=button, disable_web_page_preview=True)
+        await message.reply_text(text=Txt.START_TXT.format("""
+        👋 ʜᴇʟʟᴏ {username}!
+
+🌟 ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ ᴛʜᴇ ᴀᴅᴠᴀɴᴄᴇᴅ ʀᴇɴᴀᴍᴇ ʙᴏᴛ! 🌟
+📂 ᴡɪᴛʜ ᴛʜɪꜱ ʙᴏᴛ, ʏᴏᴜ ᴄᴀɴ ᴇᴀꜱɪʟʏ  ʀᴇɴᴀᴍᴇ ʏᴏᴜʀ ꜰɪʟᴇꜱ ᴀɴᴅ ꜱᴇᴛ ᴄᴜꜱᴛᴏᴍ ᴛʜᴜᴍʙɴᴀɪʟꜱ ᴀɴᴅ ᴄᴀᴘᴛɪᴏɴꜱ. 🖼️📝
+
+🚀 ᴛʜɪꜱ ʙᴏᴛ ᴡᴀꜱ ᴄʀᴀꜰᴛᴇᴅ ʙʏ  (text="𝙴𝚛𝚎𝚗" , url='https:t.me/Eren_yeager021')
+ᴛᴏ ᴘʀᴏᴠɪᴅᴇ ʏᴏᴜ ᴀ ꜱᴇᴀᴍʟᴇꜱꜱ ʀᴇɴᴀᴍɪɴɢ ᴇxᴘᴇʀɪᴇɴᴄᴇ. ⚡️ """ ), reply_markup=button, disable_web_page_preview=True)
    
 
 @Client.on_callback_query()
